@@ -56,7 +56,7 @@ double calcPositive(double x, int n) {
     for (int i = 0; i <= n - 1; i++) {
         double p = 1;
         for (int j = 0; j <= n - 1; j++)
-            p *= (x + i + j * j);
+            p *= (x + i + j);   // ПОМИЛКА: має бути j * j
         s += p;
     }
     return s;
